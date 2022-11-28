@@ -46,4 +46,4 @@ print(melt_data)
 cast_data = cast(melt_data, subject + activity ~ variable, mean) 
 
 # Write the tiday_data into working directory
-write.table(cast_data, file = "./tidy_data.txt")
+write.table(cast_data, file = "./tidy_data.txt", row.name=FALSE)
